@@ -67,4 +67,6 @@ fi
 
 chmod +x /etc/s6.d/*/*
 
-exec /bin/s6-svscan /etc/s6.d
+#exec /bin/s6-svscan /etc/s6.d
+exec /usr/sbin/smbd 
+exec /usr/sbin/nmbd 
